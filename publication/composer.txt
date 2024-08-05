@@ -1,0 +1,8 @@
+basic composer installation
+composer install
+
+smtp composer
+composer require phpmailer/phpmailer
+
+firebase composer
+composer require firebase/php-jwt
