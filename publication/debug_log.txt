@@ -1,0 +1,456 @@
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"vvv","email":"teacher1@example.com","branch":"comp","password":"V1","confirmPassword":"V1"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => vvv
+    [email] => teacher1@example.com
+    [branch] => comp
+    [password] => V1
+    [confirmPassword] => V1
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"vvv","email":"teacher1@example.com","branch":"comp","password":"V1","confirmPassword":"V1"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => vvv
+    [email] => teacher1@example.com
+    [branch] => comp
+    [password] => V1
+    [confirmPassword] => V1
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"vvvv","email":"teacher12@example.com","branch":"comp","password":"V11","confirmPassword":"V11"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => vvvv
+    [email] => teacher12@example.com
+    [branch] => comp
+    [password] => V11
+    [confirmPassword] => V11
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"vvvv","email":"teacher12@example.com","branch":"comp","password":"V11","confirmPassword":"V11"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => vvvv
+    [email] => teacher12@example.com
+    [branch] => comp
+    [password] => V11
+    [confirmPassword] => V11
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"vvvv","email":"teacher12@example.com","branch":"comp","password":"V11","confirmPassword":"V11"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => vvvv
+    [email] => teacher12@example.com
+    [branch] => comp
+    [password] => V11
+    [confirmPassword] => V11
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"vvvvv","email":"teacher12@example.com","branch":"comp","password":"V11","confirmPassword":"V11"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => vvvvv
+    [email] => teacher12@example.com
+    [branch] => comp
+    [password] => V11
+    [confirmPassword] => V11
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"vvvvv","email":"teacher12@example.com","branch":"comp","password":"V11","confirmPassword":"V11"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => vvvvv
+    [email] => teacher12@example.com
+    [branch] => comp
+    [password] => V11
+    [confirmPassword] => V11
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"vvvvv","email":"teacher12@example.com","branch":"comp","password":"V11","confirmPassword":"V11"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => vvvvv
+    [email] => teacher12@example.com
+    [branch] => comp
+    [password] => V11
+    [confirmPassword] => V11
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"vvvvv","email":"teacher12@example.com","branch":"comp","password":"V11","confirmPassword":"V11"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => vvvvv
+    [email] => teacher12@example.com
+    [branch] => comp
+    [password] => V11
+    [confirmPassword] => V11
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher","email":"teacher2@example.com","branch":"comp","password":"V11","confirmPassword":"V11"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher
+    [email] => teacher2@example.com
+    [branch] => comp
+    [password] => V11
+    [confirmPassword] => V11
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2","email":"teacher2@example.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2
+    [email] => teacher2@example.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2","email":"teacher2@example.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2
+    [email] => teacher2@example.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2","email":"teacher12@example.com","branch":"comp","password":"V1","confirmPassword":"V1"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2
+    [email] => teacher12@example.com
+    [branch] => comp
+    [password] => V1
+    [confirmPassword] => V1
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2","email":"teacher12@example.com","branch":"comp","password":"V1","confirmPassword":"V1"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2
+    [email] => teacher12@example.com
+    [branch] => comp
+    [password] => V1
+    [confirmPassword] => V1
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2","email":"teacher112@example.com","branch":"comp","password":"V1","confirmPassword":"V1"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2
+    [email] => teacher112@example.com
+    [branch] => comp
+    [password] => V1
+    [confirmPassword] => V1
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2","email":"teacher112@example.com","branch":"comp","password":"V1","confirmPassword":"V1"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2
+    [email] => teacher112@example.com
+    [branch] => comp
+    [password] => V1
+    [confirmPassword] => V1
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2","email":"teacher112@example.com","branch":"comp","password":"V1","confirmPassword":"V1"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2
+    [email] => teacher112@example.com
+    [branch] => comp
+    [password] => V1
+    [confirmPassword] => V1
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2","email":"teacher112@example.com","branch":"comp","password":"V1","confirmPassword":"V1"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2
+    [email] => teacher112@example.com
+    [branch] => comp
+    [password] => V1
+    [confirmPassword] => V1
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2","email":"teacher112@example.com","branch":"comp","password":"V1","confirmPassword":"V1"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2
+    [email] => teacher112@example.com
+    [branch] => comp
+    [password] => V1
+    [confirmPassword] => V1
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2","email":"teacher112@example.com","branch":"comp","password":"V1","confirmPassword":"V1"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2
+    [email] => teacher112@example.com
+    [branch] => comp
+    [password] => V1
+    [confirmPassword] => V1
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher21","email":"vdg2556519@gmail.com","branch":"comp","password":"vi","confirmPassword":"vi"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher21
+    [email] => vdg2556519@gmail.com
+    [branch] => comp
+    [password] => vi
+    [confirmPassword] => vi
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher21","email":"vdg2556519@gmail.com","branch":"comp","password":"vi","confirmPassword":"vi"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher21
+    [email] => vdg2556519@gmail.com
+    [branch] => comp
+    [password] => vi
+    [confirmPassword] => vi
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2122","email":"vdg2556519@gmail.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2122
+    [email] => vdg2556519@gmail.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2122","email":"vdg2556519@gmail.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2122
+    [email] => vdg2556519@gmail.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2122","email":"vdg2556519@gmail.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2122
+    [email] => vdg2556519@gmail.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2122","email":"vdg2556519@gmail.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2122
+    [email] => vdg2556519@gmail.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher212","email":"vdg2556519@gmail.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher212
+    [email] => vdg2556519@gmail.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher212","email":"vdg2556519@gmail.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher212
+    [email] => vdg2556519@gmail.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher212","email":"vdg2556519@gmail.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher212
+    [email] => vdg2556519@gmail.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher212","email":"vdg2556519@gmail.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher212
+    [email] => vdg2556519@gmail.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher212","email":"vdg2556519@gmail.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher212
+    [email] => vdg2556519@gmail.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2123","email":"vdg2556519@gmail.com","branch":"comp","password":"vvv","confirmPassword":"vvv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2123
+    [email] => vdg2556519@gmail.com
+    [branch] => comp
+    [password] => vvv
+    [confirmPassword] => vvv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2123","email":"vdg2556519@gmail.com","branch":"comp","password":"vvv","confirmPassword":"vvv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2123
+    [email] => vdg2556519@gmail.com
+    [branch] => comp
+    [password] => vvv
+    [confirmPassword] => vvv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2123","email":"dg2556519@gmail.com","branch":"comp","password":"vvv","confirmPassword":"vvv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2123
+    [email] => dg2556519@gmail.com
+    [branch] => comp
+    [password] => vvv
+    [confirmPassword] => vvv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teacher2123","email":"dg2556519@gmail.com","branch":"comp","password":"vvv","confirmPassword":"vvv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teacher2123
+    [email] => dg2556519@gmail.com
+    [branch] => comp
+    [password] => vvv
+    [confirmPassword] => vvv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teache","email":"vg2556519@gmail.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teache
+    [email] => vg2556519@gmail.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teache","email":"vg2556519@gmail.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teache
+    [email] => vg2556519@gmail.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
+Raw data: {"firstName":"Vishal","lastName":"Gupta","username":"teache","email":"vg2556519@gmail.com","branch":"comp","password":"vv","confirmPassword":"vv"}
+Decoded data: Array
+(
+    [firstName] => Vishal
+    [lastName] => Gupta
+    [username] => teache
+    [email] => vg2556519@gmail.com
+    [branch] => comp
+    [password] => vv
+    [confirmPassword] => vv
+)
+
