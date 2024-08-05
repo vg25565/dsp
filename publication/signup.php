@@ -76,8 +76,8 @@ if ($query->execute()) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';  // Set the SMTP server to send through
         $mail->SMTPAuth = true;
-        $mail->Username = 'vg2556519@gmail.com'; // Your Gmail email address
-        $mail->Password = 'cuyu vljo enge rgmp'; // Your Gmail password
+        $mail->Username = 'xyz'; // Your Gmail email address
+        $mail->Password = ''; // Your Gmail password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
         $mail->Port = 587; // TCP port to connect to
 
