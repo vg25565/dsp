@@ -1,40 +1,36 @@
 <?php
-require 'vendor/autoload.php';
-use \Firebase\JWT\JWT;
+session_start();
 require 'db_connection.php';
 
 header('Content-Type: application/json');
-$data = json_decode(file_get_contents('php://input'), true);
 
-$username = $data['username'];
-$password = $data['password'];
+// Check if the request is a POST request
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $userId = isset($_POST['userId']) ? $_POST['userId'] : '';
+    $password = isset($_POST['password']) ? $_POST['password'] : '';
 
-$query = $conn->prepare("SELECT * FROM users WHERE username = ?");
-$query->bind_param('s', $username);
-$query->execute();
-$result = $query->get_result();
+    // Validate input
+    if (empty($userId) || empty($password)) {
+        echo json_encode(['success' => false, 'message' => 'Please enter both User ID and Password']);
+        exit();
+    }
 
-if ($result->num_rows === 0) {
-    echo json_encode(['success' => false, 'message' => 'Invalid username or password']);
-    exit();
-}
+    // Prepare and execute the query
+    $query = $conn->prepare("SELECT * FROM users WHERE id = ?");
+    $query->bind_param('s', $userId);
+    $query->execute();
+    $result = $query->get_result();
+    $user = $result->fetch_assoc();
 
-$user = $result->fetch_assoc();
-
-if ($password == $user['password']) { // This is a simple example; in a real application, use hashed passwords.
-    $key = "abcd123";
-    $payload = [
-        'iss' => 'localhost',
-        'aud' => 'localhost',
-        'iat' => time(),
-        'exp' => time() + (60 * 60),
-        'sub' => $user['id'],
-        'role' => $user['role']
-    ];
-
-    $jwt = JWT::encode($payload, $key, 'HS256');
-    echo json_encode(['success' => true, 'token' => $jwt, 'role' => $user['role']]);
+    // Check if the user exists and the password is correct
+    if ($user && password_verify($password, $user['password'])) {
+        // Set session variables
+        $_SESSION['user_id'] = $user['id'];
+        echo json_encode(['success' => true, 'message' => 'Login successful']);
+    } else {
+        echo json_encode(['success' => false, 'message' => 'Invalid User ID or Password']);
+    }
 } else {
-    echo json_encode(['success' => false, 'message' => 'Invalid username or password']);
+    echo json_encode(['success' => false, 'message' => 'Invalid request']);
 }
 ?>

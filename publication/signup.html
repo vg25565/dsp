@@ -23,37 +23,46 @@
         }
     </style>
 </head>
-<body class="bg-gray-800 min-h-screen flex items-center justify-center p-4">
-    <div class="bg-gray-900 text-white rounded-lg shadow-lg p-8 max-w-md w-full">
-        <h2 class="text-teal-400 text-3xl font-semibold mb-2 text-center relative inline-block">
-            Register
-            <span class="absolute animate-ping inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+<body class="bg-gray-100">
+    <div class="px-auto items-center mx-auto bg-white "><img src="./tcet-new-logo.png" class="mx-auto inset-x-0 top-0" alt=""></div>
+        
+    
+    <div class="bg-white text-black rounded-lg shadow-lg p-8 max-w-2xl w-full mx-auto my-10">
+        <h2 class="text-black-400 text-3xl font-semibold mb-2 text-center mx-auto">
+            Faculty Sign-Up detail
+
         </h2>
         <p class="text-gray-400 text-center mb-6">Sign up now and get full access to our app.</p>
         
-        <form id="signupForm" class="space-y-4">
+        <form id="signupForm" class="space-y-4" autocomplete="off">
             <div class="flex gap-4">
-                <input type="text" id="firstName" placeholder="First Name" required class="w-full bg-gray-800 text-white border border-gray-700 rounded-lg p-3 outline-none focus:ring-2 focus:ring-teal-400">
-                <input type="text" id="lastName" placeholder="Last Name" required class="w-full bg-gray-800 text-white border border-gray-700 rounded-lg p-3 outline-none focus:ring-2 focus:ring-teal-400">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required class="w-full p-3 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-teal-300">
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required class="w-full p-3 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-teal-300">
             </div>
-            <input type="text" id="username" placeholder="Username" required class="w-full bg-gray-800 text-white border border-gray-700 rounded-lg p-3 outline-none focus:ring-2 focus:ring-teal-400">
-            <input type="email" id="email" placeholder="Email" required class="w-full bg-gray-800 text-white border border-gray-700 rounded-lg p-3 outline-none focus:ring-2 focus:ring-teal-400">
-            <input type="text" id="branch" placeholder="Branch" required class="w-full bg-gray-800 text-white border border-gray-700 rounded-lg p-3 outline-none focus:ring-2 focus:ring-teal-400">
-            <input type="password" id="password" placeholder="Password" required class="w-full bg-gray-800 text-white border border-gray-700 rounded-lg p-3 outline-none focus:ring-2 focus:ring-teal-400">
-            <input type="password" id="confirmPassword" placeholder="Confirm Password" required class="w-full bg-gray-800 text-white border border-gray-700 rounded-lg p-3 outline-none focus:ring-2 focus:ring-teal-400">
+            <input type="text" id="username" name="username" placeholder="Username" required class="w-full p-3 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-teal-300">
+            <input type="email" id="email" name="email" placeholder="Email" required class="w-full p-3 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-teal-300">
+            <input type="text" id="branch" name="branch" placeholder="Branch" required class="w-full p-3 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-teal-300">
+            
+            <div class="relative">
+                <input type="password" id="password" name="password" placeholder="Password" required class="w-full p-3 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-teal-300">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required class="w-full p-3 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-teal-300">
+                <button type="button" onclick="togglePasswordVisibility()" class="absolute right-3 top-3 text-gray-900">
+                    <i id="togglePasswordIcon" class="fas fa-eye"></i>
+                </button>
+            </div>
 
-            <div class="flex items-center gap-4">
-                <input type="text" placeholder="Captcha Code" required aria-label="Captcha Code" id="captcha-input" class="w-full bg-gray-800 text-white border border-gray-700 rounded-lg p-3 outline-none focus:ring-2 focus:ring-teal-400">
+            <div class="flex items-center gap-4 captcha-container">
+                <input type="text" placeholder="Captcha Code" required aria-label="Captcha Code" id="captcha-input" class="w-full p-3 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-teal-300">
                 <div onclick="generateCaptcha()" class="text-teal-400 cursor-pointer">
                     <i class="fas fa-sync fa-lg"></i>
                 </div>
                 <div id="captcha-image" class="image w-24 h-10 flex items-center justify-center"></div>
             </div>
 
-            <button class="w-full bg-teal-400 text-white rounded-lg p-3 mt-4 hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-400">Submit</button>
+            <button type="submit" class="w-full bg-blue-600 text-white rounded-lg p-3 mt-4 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-200">Submit</button>
             <p id="message" class="text-center text-gray-400 mt-4"></p>
             <p class="text-center text-gray-400 mt-4">Already have an account? 
-                <a href="#" class="text-teal-400">Sign In</a>
+                <a href="#" class="text-teal-400">Log In</a>
             </p>
         </form>
     </div>
@@ -71,7 +80,24 @@
                 uniqueChar += randomChar.charAt(Math.floor(Math.random() * randomChar.length));
             }
 
-            captchaImage.innerHTML = uniqueChar;
+            captchaImage.textContent = uniqueChar;
+        }
+
+        function togglePasswordVisibility() {
+            const passwordField = document.getElementById('password');
+            const confirmPasswordField = document.getElementById('confirmPassword');
+            const icon = document.getElementById('togglePasswordIcon');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                confirmPasswordField.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                passwordField.type = 'password';
+                confirmPasswordField.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
         }
 
         // Generate captcha on page load
@@ -90,8 +116,17 @@
             const branch = document.getElementById('branch').value;
             const password = document.getElementById('password').value;
             const confirmPassword = document.getElementById('confirmPassword').value;
-            
-            console.log({ firstName, lastName, username, email, branch, password, confirmPassword });
+            const captchaInput = document.getElementById('captcha-input').value;
+            const captchaImage = document.getElementById('captcha-image').textContent;
+
+            console.log({ firstName, lastName, username, email, branch, password, confirmPassword, captchaInput, captchaImage });
+
+            if (captchaInput !== captchaImage) {
+                document.getElementById('message').style.color = 'red';
+                document.getElementById('message').textContent = 'Captcha does not match. Please try again.';
+                generateCaptcha();
+                return;
+            }
 
             try {
                 const response = await fetch('signup.php', {

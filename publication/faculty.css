@@ -1,0 +1,20 @@
+ /* Custom styles */
+      
+        
+ #mobile-menu {
+    width: 30%; /* Adjust to the desired width */
+    right: 0; /* Position it on the right side */
+    top: 100;
+    bottom: 100;
+    transform: translateX(100%); /* Initially hidden */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+
+}
+#mobile-menu.open {
+    transform: translateX(0); /* Slide in */
+}

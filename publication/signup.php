@@ -11,22 +11,10 @@ header('Content-Type: application/json');
 // Read the raw input data
 $rawData = file_get_contents('php://input');
 
-// Log raw data for debugging
-file_put_contents('debug_log.txt', "Raw data: $rawData\n", FILE_APPEND);
-
 // Decode the JSON input
 $data = json_decode($rawData, true);
 
-// Log decoded data for debugging
-file_put_contents('debug_log.txt', "Decoded data: " . print_r($data, true) . "\n", FILE_APPEND);
-
-// Check if the data is properly received
-if ($data === null) {
-    echo json_encode(['success' => false, 'message' => 'Invalid input']);
-    exit();
-}
-
-// Extract fields from the data array with default values if keys are not set
+// Extract fields from the data array
 $firstName = $data['firstName'] ?? null;
 $lastName = $data['lastName'] ?? null;
 $username = $data['username'] ?? null;
@@ -76,13 +64,13 @@ if ($query->execute()) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';  // Set the SMTP server to send through
         $mail->SMTPAuth = true;
-        $mail->Username = 'vg2556519@gmail.com'; // Your Gmail email address
-        $mail->Password = 'cuyu vljo enge rgmp'; // Your Gmail password
+        $mail->Username = 'your-email@gmail.com'; // Your Gmail email address
+        $mail->Password = 'your-email-password'; // Your Gmail password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
         $mail->Port = 587; // TCP port to connect to
 
         // Recipients
-        $mail->setFrom('vg2556519@gmail.com', 'Your Company Name'); // Your Gmail email address
+        $mail->setFrom('your-email@gmail.com', 'Your Company Name'); // Your Gmail email address
         $mail->addAddress($email); // Recipient's email address
 
         // Content
